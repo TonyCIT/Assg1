@@ -1,20 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    page: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        },
-    input: {
-        width: '80%',
-        flex: .15,
-        borderWidth: 2,
-        borderRadius: 10,
-        paddingLeft: 15,
-        margin: 15,
-        },
+
+    // Page2.js
+    
     button: {
         backgroundColor: 'lightblue',
         borderRadius: 30,
@@ -108,7 +97,43 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 5,
     },
-    
+
+    // Index.js
+    page: {
+        flex: 1,
+        padding: 20,
+        backgroundColor: '#f0f0f0', // Light grey background
+    },
+    input: {
+        width: '80%',
+        flex: .15,
+        borderWidth: 2,
+        borderRadius: 10,
+        paddingLeft: 15,
+        margin: 15,
+    },
+    instructionsTitle: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#333', // Darker text for the title
+        marginBottom: 10,
+    },
+    instruction: {
+        fontSize: 16,
+        color: '#555', // Slightly lighter text for instructions
+        marginBottom: 5,
+    },
+    clearButton: {
+        backgroundColor: '#007bff', // Example: Blue background for the clear button
+        padding: 10,
+        borderRadius: 5,
+        marginTop: 20,
+        alignItems: 'center',
+    },
+    clearButtonText: {
+        color: 'white', // White text for the clear button
+        fontSize: 16,
+    },
 });
 
 export default styles;
