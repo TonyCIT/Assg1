@@ -10,6 +10,14 @@ export default function Page() {
     const [one, onChangeOne] = React.useState("");
     const [two, onChangeTwo] = React.useState("");
     const [three, onChangeThree] = React.useState("");
+    
+    const [one1] = React.useState("Adjective");
+    const [two2] = React.useState("Animal");
+    const [three3] = React.useState("Noun");
+
+    const instructionsTextAdjective = "Adjective - A word that describes something.";
+    const instructionsTextAnimal = "Animal - Any kind of animal.";
+    const instructionsTextNoun = "Noun - A person, place, thing, or idea.";
 
     // Function to clear all input fields
     const clearInputs = () => {
@@ -22,30 +30,28 @@ export default function Page() {
         <View style={Styles.page}>
             {/* Instructions and descriptions for the Mad Libs */}
             <Text style={Styles.instructionsTitle}>How to play Mad Libs:</Text>
-            <Text style={Styles.instruction}>
-                {"Adjective - A word that describes something.\n" +
-                "Animal - Any kind of animal.\n" +
-                "Noun - A person, place, thing, or idea."}
-            </Text>
 
             {/* Input fields for user to fill in words for the Mad Libs */}
+            <Text style={Styles.instruction}>{instructionsTextAdjective}</Text>
             <TextInput
                 style={Styles.input}
                 onChangeText={onChangeOne}
                 value={one}
-                placeholder="Adjective"
+                placeholder={one1}
             />
+            <Text style={Styles.instruction}>{instructionsTextAnimal}</Text>
             <TextInput
                 style={Styles.input}
                 onChangeText={onChangeTwo}
                 value={two}
-                placeholder="Animal"
+                placeholder={two2}
             />
+            <Text style={Styles.instruction}>{instructionsTextNoun}</Text>
             <TextInput
                 style={Styles.input}
                 onChangeText={onChangeThree}
                 value={three}
-                placeholder="Noun"
+                placeholder={three3}
             />
 
             {/* Link to navigate to Page 2 with the filled in words as parameters */}
