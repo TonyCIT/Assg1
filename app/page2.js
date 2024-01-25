@@ -66,6 +66,7 @@ export default function Page() {
                     
                 {/* Signature pad for user input */}
                 <View style={Styles.signatureContainer}>
+                <Text >Signature:</Text>
                     <Signature
                         onOK={handleSignature}
                         onEmpty={handleEmpty}
